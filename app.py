@@ -1,10 +1,7 @@
-import streamlit as st
-import time
-
 st.set_page_config(page_title="BrandWatch AI", page_icon="🤖")
 st.title("🤖 BrandWatch AI Monitoring Agent")
 
-brand = st.text_input("Enter Brand Name to Monitor", placeholder="e.g. Samsung")
+brand = st.text_input("Enter Brand Name", placeholder="e.g. Samsung")
 
 if st.button("Deploy Agent"):
 with st.status("Agent performing autonomous scan...", expanded=True) as status:
